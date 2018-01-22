@@ -44,7 +44,7 @@ def deleteFile(fileName, fs):
     for fObj in c:
         fs.delete(ObjectId(fObj._id))
 
-uri = 'mongodb+srv://mzakaria:mxyzptlk@cluster0-yygrq.mongodb.net/test'
+uri = 'mongodb+srv://username:password@cluster0-yygrq.mongodb.net/test'
 
 db = connect(uri, 27017,'gfs')
 fs = gridfs.GridFS(db)
